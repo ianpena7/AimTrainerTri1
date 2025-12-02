@@ -14,13 +14,14 @@ public class TargetBounds : MonoBehaviour
 
     public Vector3 GetRandomPosition()
     {
+        
         Vector3 center = col.center + transform.position;
 
-        float minX = center.x - col.size.x / 2f;
-        float maxX = center.x + col.size.x / 2f;
+        float minX = center.x - col.size.x / 1f;
+        float maxX = center.x + col.size.x / 1f;
 
-        float minY = center.y - col.size.y / 2f;    
-        float maxY = center.y + col.size.y / 2f;
+        float minY = center.y - col.size.y / 1f;    
+        float maxY = center.y + col.size.y / 1f;
 
         float minZ = center.z - col.size.z / 2f;
         float maxZ = center.z + col.size.z / 2f;

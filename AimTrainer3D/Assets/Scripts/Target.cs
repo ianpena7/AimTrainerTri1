@@ -13,9 +13,16 @@ public class Target : MonoBehaviour
     {
         
     }
-
+    // INVOKE
     public void Hit()
     {
+        gameObject.SetActive(false);
+        // Delay in respawn
+        Invoke("Respawn", 0.5f);
+    }
+    public void Respawn(){
+        gameObject.SetActive(true);
         transform.position = TargetBounds.Instance.GetRandomPosition();
+        Debug.Log("Respawn Successful");
     }
 }
