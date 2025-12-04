@@ -5,7 +5,7 @@ public class Target : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -16,6 +16,7 @@ public class Target : MonoBehaviour
     // INVOKE
     public void Hit()
     {
+        ScoreCount.Instance.addPoint(10);
         gameObject.SetActive(false);
         // Delay in respawn
         Invoke("Respawn", 0.5f);

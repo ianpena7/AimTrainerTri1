@@ -830,7 +830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   cameraHolder: {fileID: 1144822995}
-  mouseSensitivity: 1
+  mouseSensitivity: 5
 --- !u!4 &1574726458
 Transform:
   m_ObjectHideFlags: 0
