@@ -5,17 +5,24 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] GameObject startMenu;
+    public DifficultySO easy;
+    public DifficultySO medium;
+    public DifficultySO hard;
+
+
     public void Easy(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        DifficultyManager.Instance.SetDifficulty(DifficultyManager.Instance.easy);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void Medium(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Medium");
+        DifficultyManager.Instance.SetDifficulty(DifficultyManager.Instance.medium);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void Hard(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        DifficultyManager.Instance.SetDifficulty(DifficultyManager.Instance.hard);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void Quit(){

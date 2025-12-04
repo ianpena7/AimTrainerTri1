@@ -646,6 +646,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenu
   startMenu: {fileID: 258428871}
+  easy: {fileID: 0}
+  medium: {fileID: 0}
+  hard: {fileID: 0}
+--- !u!1 &362760594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362760596}
+  - component: {fileID: 362760595}
+  m_Layer: 0
+  m_Name: DiffManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &362760595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362760594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1eda466fb984e94a38b41de8aa2303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DifficultyManager
+  CurrentDifficulty: {fileID: 0}
+  easy: {fileID: 11400000, guid: 9f3cd266104e644caa8f8a851adaebce, type: 2}
+  medium: {fileID: 11400000, guid: c5bf5ef03901f432cb427e49386617b0, type: 2}
+  hard: {fileID: 11400000, guid: 2c5749ddaddf443879ee33649944e66a, type: 2}
+--- !u!4 &362760596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362760594}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 936.7982, y: 317.3355, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409971170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,3 +1981,4 @@ SceneRoots:
   - {fileID: 617934577}
   - {fileID: 29668107}
   - {fileID: 1301877226}
+  - {fileID: 362760596}
